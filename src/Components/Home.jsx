@@ -1,18 +1,17 @@
 import React, { Component } from 'react';
-import { Button,Form,Container,Row,Col,Navbar} from 'react-bootstrap';
+import {Container,Row,Col,Navbar} from 'react-bootstrap';
 import {withRouter} from 'react-router-dom';
+import { Link } from "react-router-dom"; 
 
 class Home extends Component {
     constructor(props){
       super(props)
       this.state={
         data:'',
-        
       }
-  
     }
   
-    //lifecycle to retrieve all persisted Data
+//lifecycle to retrieve all persisted Data
     componentDidMount() {
         fetch('https://xkcd.now.sh/?comic=latest')
         .then(res => res.json())
@@ -28,13 +27,14 @@ class Home extends Component {
     let {img,alt,title} = this.state.data
     return (
       <div className ="project">
-           <Navbar expand="lg" variant="light" bg="light"  >
-          <p >Notes-app</p>
-        </Navbar>
-        <Container className="text-center">
+        <div className= 'p-3'>
+            <Link to="/" className="latest p-3">Latest</Link>
+            <Link to="/search" className="search p-3">Search</Link>
+        </div>
+        <Container className="text-center mt-3">
           <Row>
             <Col md={{span: 8, offset: 2}} lg={{span: 8, offset: 2}}>
-              <img className = "latestImage" src={img} alt={title} title ={alt}></img>
+              <img className = "latestImage mt-4" src={img} alt={title} title ={alt}></img>
             </Col>
           </Row>
         </Container>
