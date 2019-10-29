@@ -1,3 +1,18 @@
+
+To Run:
+
+After intial clone,
+
+1. NPM install
+2. NPM start
+3. go to http://localhost:3006 and enjoy!
+
+
+Additional Notes:
+The directions were to buid out both webpages with the navigational links.  I think it would be better if the navigational links were its seperate component.
+I had a lot of fun building out this API interaction! Enjoy!
+
+
 # Support Engineer Challenge
 
 Welcome! If you are reading this, it's likely because you want to work with us. If you have already applied, then continue on. If not, check out our [careers](https://newstorycharity.org/careers/) page to see our available openings. No software developer opening? Email us anyway!

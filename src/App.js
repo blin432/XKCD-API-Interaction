@@ -11,7 +11,7 @@ class App extends Component {
         <div className="App">
         <Switch>
           <Route  path="/" exact component={Home}/>
-          <Route  path="/search" component={Search}/>  {/* URL path to get specific note, Try  "http://localhost:3000/notes/1"!  */}
+          <Route  path="/search" component={Search}/>  
         </Switch>
       </div>
       );
